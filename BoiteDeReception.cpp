@@ -3,7 +3,7 @@
 
 using namespace std;
 
-BoiteDeReception::BoiteDeReception() : m_message("nouveau message")
+BoiteDeReception::BoiteDeReception() : m_message("Nouveau mesage !!")
 {
 
 }
