@@ -27,8 +27,8 @@ CONNEXION DIALOG
 BEGIN
     DEFPUSHBUTTON "Se connecter", ID_B_SECONNECTER, 50, 90, 50, 12
     PUSHBUTTON     "Annuler", ID_B_ANNULER, 120, 90, 50, 12
-    EDITTEXT       ID_C_EDIT_LOGIN, 24, 29, 229, 12
+    EDITTEXT       ID_C_EDIT_LOGIN, 24, 29, 100, 12
     LTEXT          "Login : ", -1, 24, 19, 77, 8
-    EDITTEXT       ID_C_EDIT_MDP, 24, 62, 229, 12
+    EDITTEXT       ID_C_EDIT_MDP, 24, 62, 100, 12
     LTEXT          "Mot de passe : ", -1, 25, 52, 60, 9
 END
