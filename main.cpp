@@ -7,7 +7,7 @@
 #include "Git/Utilisateur.h"
 
 HINSTANCE instance;
-Utilisateur sarah("Sarah", "A", "SA", "motdepasse");
+Utilisateur sarah("Sarah", "A", "S.A.", "motdepasse");
 
 LRESULT CALLBACK procedureFenetrePrincipale(HWND, UINT, WPARAM, LPARAM);
 BOOL APIENTRY connexion_procedure(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam);
