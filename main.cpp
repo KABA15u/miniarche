@@ -4,7 +4,7 @@
 #include <windowsx.h>
 #include <string.h>
 #include "constantes.h"
-#include "Git/Utilisateur.h"
+#include "Utilisateur.h"
 
 HINSTANCE instance;
 Utilisateur sarah("Sarah", "A", "S.A.", "motdepasse");

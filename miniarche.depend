@@ -30,3 +30,21 @@
 	"BoiteDeReception.h"
 	<vector>
 
+1419061342 source:c:\users\moach\documents\cpooa\miniarche\main.cpp
+	<windows.h>
+	<windowsx.h>
+	<string.h>
+	"constantes.h"
+	"Utilisateur.h"
+
+1417603992 c:\users\moach\documents\cpooa\miniarche\constantes.h
+
+1417624158 c:\users\moach\documents\cpooa\miniarche\utilisateur.h
+	<windows.h>
+	<windowsx.h>
+
+1419061359 source:c:\users\moach\documents\cpooa\miniarche\ressource.rc
+	<windows.h>
+	"constantes.h"
+	"Utilisateur.h"
+
