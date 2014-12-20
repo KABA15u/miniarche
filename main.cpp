@@ -11,6 +11,7 @@ Utilisateur sarah("Sarah", "A", "S.A.", "motdepasse");
 
 LRESULT CALLBACK procedureFenetrePrincipale(HWND, UINT, WPARAM, LPARAM);
 BOOL APIENTRY connexion_procedure(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam);
+BOOL APIENTRY bdr_procedure(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
 char buffer[50];
 
@@ -43,7 +44,7 @@ int WinMain(HINSTANCE cetteInstance, HINSTANCE precedentInstance, LPSTR lignesDe
                                     400,
                                     300,
                                     NULL, //pas de fenetre parent car Principale
-                                    LoadMenu(instance, "ID_MENU"), //pas de menu
+                                    LoadMenu(instance, "ID_MENU"),
                                     cetteInstance,
                                     NULL); //Aucun param à lui envoyé en plus
     if(!fenetrePrincipale) return FALSE;
@@ -69,6 +70,10 @@ LRESULT CALLBACK procedureFenetrePrincipale(HWND fenetrePrincipale, UINT message
         {
         case ID_B_CONNEXION:
             DialogBox(instance, "CONNEXION", fenetrePrincipale, (DLGPROC)connexion_procedure);
+            break;
+
+        case ID_B_BDR:
+            DialogBox(instance, "BOITE_DE_RECEPTION", fenetrePrincipale, (DLGPROC)bdr_procedure);
             break;
 
         case ID_B_ACCEUIL:
@@ -125,3 +130,31 @@ BOOL APIENTRY connexion_procedure(HWND boiteDeDialogue, UINT message, WPARAM wPa
         return FALSE;
     }
 }
+
+BOOL APIENTRY bdr_procedure(HWND boiteDeDialogue, UINT message, WPARAM wParam, LPARAM lParam)
+{
+    switch (message)
+    {
+
+    case WM_CLOSE:
+        EndDialog(boiteDeDialogue, 0);
+        break;
+
+    case WM_INITDIALOG:
+        SetFocus(GetDlgItem(boiteDeDialogue, ID_C_TEXTAREA));
+        return FALSE;
+
+    case WM_COMMAND:
+        switch(LOWORD(wParam))
+        {
+            case ID_B_RETOUR:
+                SendMessage(boiteDeDialogue, WM_CLOSE, NULL, NULL);
+                break;
+        }
+        return 0;
+
+    default:
+        return FALSE;
+    }
+}
+

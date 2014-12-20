@@ -15,6 +15,7 @@ BEGIN
     POPUP "Ma page"
     BEGIN
         MENUITEM "Connexion", ID_B_CONNEXION
+        MENUITEM "Boite de reception", ID_B_BDR
     END
 END
 
@@ -31,4 +32,14 @@ BEGIN
     LTEXT          "Login : ", -1, 24, 19, 77, 8
     EDITTEXT       ID_C_EDIT_MDP, 24, 62, 100, 12
     LTEXT          "Mot de passe : ", -1, 25, 52, 60, 9
+END
+
+BOITE_DE_RECEPTION DIALOG
+    CW_USEDEFAULT, CW_USEDEFAULT, 200, 120
+        STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_SYSMENU
+        CAPTION "Boite de reception"
+BEGIN
+    PUSHBUTTON     "Retour", ID_B_RETOUR, 120, 90, 50, 12
+    EDITTEXT       ID_C_TEXTAREA, 24, 29, 100, 50
+    LTEXT          "Message: ", -1, 24, 19, 77, 8
 END
