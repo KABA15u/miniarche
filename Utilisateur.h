@@ -1,39 +1,36 @@
 #ifndef DEF_UTILISATEUR
 #define DEF_UTILISATEUR
 
-#include <iostream>
-#include <string>
-#include "BoiteDeReception.h"
+#include <windows.h>
+#include <windowsx.h>
+//#include "BoiteDeReception.h"
 
-class Utilisateur 
+class Utilisateur
 {
       public:
-      
+
       ~Utilisateur();
-      Utilisateur(std::string nom, std::string prenom, std::string login, std::string mdp);  
-      std::string getNom() const;
-      void setNom(std::string nom);
-      std::string getPrenom() const;
-      void setPrenom(std::string prenom);
-      std::string getLogin() const;
-      void setLogin(std::string login);
-      std::string getMdp() const;
-      void setMdp(std::string mdp);
-      void newMessage(std::string message);
-      std::string afficherMessage() const;
-      void ajouterMessage(std::string message);
-      void supprimerMessage(int i);
-    
-      void affichageConsole() const;
-           
+      Utilisateur(LPCSTR nom, LPCSTR prenom, LPCSTR login, LPCSTR mdp);
+      LPCSTR getNom() const;
+      void setNom(LPCSTR nom);
+      LPCSTR getPrenom() const;
+      void setPrenom(LPCSTR prenom);
+      LPCSTR getLogin() const;
+      void setLogin(LPCSTR login);
+      LPCSTR getMdp() const;
+      void setMdp(LPCSTR mdp);
+     /* LPCSTR afficherMessage() const;
+      void newMessage(LPCSTR message);*/
+
+
       private:
-      
-      std::string m_nom;
-      std::string m_prenom;
-      std::string m_login;
-      std::string m_mdp;
-      BoiteDeReception m_bdr;
-      
+
+      LPCSTR m_nom;
+      LPCSTR m_prenom;
+      LPCSTR m_login;
+      LPCSTR m_mdp;
+      //BoiteDeReception m_bdr;
+
 };
 
 #endif

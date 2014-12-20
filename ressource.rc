@@ -1,0 +1,34 @@
+#include <windows.h>
+
+#include "constantes.h"
+#include "Git/Utilisateur.h"
+
+// Le Menu de la fenetre principale :
+ID_MENU MENU
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Acceuil", ID_B_ACCEUIL
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter", ID_B_QUITTER
+    END
+    POPUP "Ma page"
+    BEGIN
+        MENUITEM "Connexion", ID_B_CONNEXION
+    END
+END
+
+
+// La fenetre (boite de dialogue) de connexion :
+CONNEXION DIALOG
+    CW_USEDEFAULT, CW_USEDEFAULT, 200, 120
+        STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_SYSMENU
+        CAPTION "Connexion"
+BEGIN
+    DEFPUSHBUTTON "Se connecter", ID_B_SECONNECTER, 50, 90, 50, 12
+    PUSHBUTTON     "Annuler", ID_B_ANNULER, 120, 90, 50, 12
+    EDITTEXT       ID_C_EDIT_LOGIN, 24, 29, 229, 12
+    LTEXT          "Login : ", -1, 24, 19, 77, 8
+    EDITTEXT       ID_C_EDIT_MDP, 24, 62, 229, 12
+    LTEXT          "Mot de passe : ", -1, 25, 52, 60, 9
+END

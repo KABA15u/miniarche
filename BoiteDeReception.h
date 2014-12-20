@@ -1,27 +1,24 @@
 #ifndef DEF_BOITEDERECEPTION
 #define DEF_BOITEDERECEPTION
 
-#include <iostream>
-#include <string>
-#include <vector>
+#include <windows.h>
+#include <windowsx.h>
 
 class BoiteDeReception
 {
     public:
-    
+
     BoiteDeReception();
-    void newMessage(std::string message);
-    std::string afficherMessage() const;
-    void ajouterMessage(std::string message);
+    void newMessage(LPCSTR message);
+    LPCSTR afficherMessage() const;
+    void ajouterMessage(LPCSTR message);
     void supprimerMessage(int i);
-    
-    void affichageConsole() const; // plus tard toString()
-      
+
     private:
-    
-    std::vector<std::string> m_messageNonLu;
-    std::vector<std::string> m_messageLu;
-    std::string m_message;
+
+    char m_messageNonLu[50];
+    char m_messageLu[50];
+    LPCSTR m_message;
 };
 
 #endif
