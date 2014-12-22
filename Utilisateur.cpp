@@ -1,6 +1,4 @@
 #include "Utilisateur.h"
-#include <windows.h>
-#include <windowsx.h>
 
 using namespace std;
 
@@ -54,7 +52,7 @@ using namespace std;
            m_mdp = mdp;
       }
 
-  /*    LPCSTR Utilisateur::afficherMessage() const
+      LPCSTR Utilisateur::afficherMessage() const
       {
           return m_bdr.afficherMessage();
       }
@@ -62,4 +60,4 @@ using namespace std;
       void Utilisateur::newMessage(LPCSTR message)
       {
           m_bdr.newMessage(message);
-      }*/
+      }

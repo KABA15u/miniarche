@@ -2,7 +2,6 @@
 
 #include <windows.h>
 #include <windowsx.h>
-#include <string.h>
 #include "constantes.h"
 #include "Utilisateur.h"
 
@@ -142,6 +141,7 @@ BOOL APIENTRY bdr_procedure(HWND boiteDeDialogue, UINT message, WPARAM wParam, L
 
     case WM_INITDIALOG:
         SetFocus(GetDlgItem(boiteDeDialogue, ID_C_TEXTAREA));
+        SetDlgItemText(boiteDeDialogue, ID_C_TEXTAREA, sarah.afficherMessage());
         return FALSE;
 
     case WM_COMMAND:

@@ -37,6 +37,10 @@
 			<Add library="kernel32" />
 			<Add library="comctl32" />
 		</Linker>
+		<Unit filename="BoiteDeReception.cpp" />
+		<Unit filename="BoiteDeReception.h" />
+		<Unit filename="Utilisateur.cpp" />
+		<Unit filename="Utilisateur.h" />
 		<Unit filename="constantes.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="ressource.rc">

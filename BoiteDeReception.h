@@ -3,6 +3,7 @@
 
 #include <windows.h>
 #include <windowsx.h>
+#include <vector>
 
 class BoiteDeReception
 {
@@ -16,8 +17,8 @@ class BoiteDeReception
 
     private:
 
-    char m_messageNonLu[50];
-    char m_messageLu[50];
+    std::vector<LPCSTR> m_messageNonLu;
+    std::vector<LPCSTR> m_messageLu;
     LPCSTR m_message;
 };
 

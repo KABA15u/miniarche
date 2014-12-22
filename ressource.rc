@@ -1,7 +1,6 @@
 #include <windows.h>
 
 #include "constantes.h"
-#include "Utilisateur.h"
 
 // Le Menu de la fenetre principale :
 ID_MENU MENU

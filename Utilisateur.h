@@ -3,7 +3,7 @@
 
 #include <windows.h>
 #include <windowsx.h>
-//#include "BoiteDeReception.h"
+#include "BoiteDeReception.h"
 
 class Utilisateur
 {
@@ -19,8 +19,8 @@ class Utilisateur
       void setLogin(LPCSTR login);
       LPCSTR getMdp() const;
       void setMdp(LPCSTR mdp);
-     /* LPCSTR afficherMessage() const;
-      void newMessage(LPCSTR message);*/
+      LPCSTR afficherMessage() const;
+      void newMessage(LPCSTR message);
 
 
       private:
@@ -29,7 +29,7 @@ class Utilisateur
       LPCSTR m_prenom;
       LPCSTR m_login;
       LPCSTR m_mdp;
-      //BoiteDeReception m_bdr;
+      BoiteDeReception m_bdr;
 
 };
 

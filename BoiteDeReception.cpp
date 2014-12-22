@@ -1,5 +1,4 @@
 #include "BoiteDeReception.h"
-#include <vector>
 
 using namespace std;
 

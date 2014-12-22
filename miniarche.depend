@@ -53,3 +53,31 @@
 	<windows.h>
 	<windowsx.h>
 
+1419233058 source:c:\users\admini\documents\sarahproject\miniarche\main.cpp
+	<windows.h>
+	<windowsx.h>
+	"constantes.h"
+	"Utilisateur.h"
+
+1419105866 c:\users\admini\documents\sarahproject\miniarche\constantes.h
+
+1419154693 c:\users\admini\documents\sarahproject\miniarche\utilisateur.h
+	<windows.h>
+	<windowsx.h>
+	"BoiteDeReception.h"
+
+1419146460 c:\users\admini\documents\sarahproject\miniarche\boitedereception.h
+	<windows.h>
+	<windowsx.h>
+	<vector>
+
+1419233081 source:c:\users\admini\documents\sarahproject\miniarche\ressource.rc
+	<windows.h>
+	"constantes.h"
+
+1419232981 source:c:\users\admini\documents\sarahproject\miniarche\boitedereception.cpp
+	"BoiteDeReception.h"
+
+1419232969 source:c:\users\admini\documents\sarahproject\miniarche\utilisateur.cpp
+	"Utilisateur.h"
+
