@@ -1,8 +1,9 @@
 #include "BoiteDeReception.h"
+#include <vector>
 
 using namespace std;
 
-BoiteDeReception::BoiteDeReception() : m_message("Nouveau mesage !!")
+  BoiteDeReception::BoiteDeReception() : m_message("Nouveau mesage !!")
 {
 
 }
@@ -23,5 +24,5 @@ void BoiteDeReception::ajouterMessage(LPCSTR message){
 
 void BoiteDeReception::supprimerMessage(int i){
     int index = i-1;
-    m_messageNonLu.erase (m_messageNonLu.begin()+index);
+      m_messageNonLu.erase(m_messageNonLu.begin()+index);
 }

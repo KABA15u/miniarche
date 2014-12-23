@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mini-arche" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/mini-arche" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/mini-arche" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../BoiteDeReception.cpp" />
+		<Unit filename="../BoiteDeReception.h" />
+		<Unit filename="../BoiteDeReception.o" />
+		<Unit filename="../Utilisateur.cpp" />
+		<Unit filename="../Utilisateur.h" />
+		<Unit filename="../Utilisateur.o" />
+		<Unit filename="../constantes.h" />
+		<Unit filename="../include/Devoir.h" />
+		<Unit filename="../include/DevoirsRendus.h" />
+		<Unit filename="../include/EnonceDevoir.h" />
+		<Unit filename="../include/Etudiant.h" />
+		<Unit filename="../include/Fichier.h" />
+		<Unit filename="../include/LesAdministrateurs.h" />
+		<Unit filename="../include/LesCours.h" />
+		<Unit filename="../include/LesEnseignants.h" />
+		<Unit filename="../include/LesEtudiants.h" />
+		<Unit filename="../include/LesMatieres.h" />
+		<Unit filename="../include/LesRessources.h" />
+		<Unit filename="../include/Matiere.h" />
+		<Unit filename="../include/PropositionsCours.h" />
+		<Unit filename="../include/Ressource.h" />
+		<Unit filename="../main.cpp" />
+		<Unit filename="../main.o" />
+		<Unit filename="../ressource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../src/Devoir.cpp" />
+		<Unit filename="../src/DevoirsRendus.cpp" />
+		<Unit filename="../src/EnonceDevoir.cpp" />
+		<Unit filename="../src/Etudiant.cpp" />
+		<Unit filename="../src/Fichier.cpp" />
+		<Unit filename="../src/LesAdministrateurs.cpp" />
+		<Unit filename="../src/LesCours.cpp" />
+		<Unit filename="../src/LesEnseignants.cpp" />
+		<Unit filename="../src/LesEtudiants.cpp" />
+		<Unit filename="../src/LesMatieres.cpp" />
+		<Unit filename="../src/LesRessources.cpp" />
+		<Unit filename="../src/Matiere.cpp" />
+		<Unit filename="../src/PropositionsCours.cpp" />
+		<Unit filename="../src/Ressource.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

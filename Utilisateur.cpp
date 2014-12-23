@@ -1,4 +1,6 @@
 #include "Utilisateur.h"
+#include <windows.h>
+#include <windowsx.h>
 
 using namespace std;
 

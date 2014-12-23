@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1419144599 source:d:\mini-arche\boitedereception.cpp
+	"BoiteDeReception.h"
+	<vector>
+
+1419173707 d:\mini-arche\boitedereception.h
+	<windows.h>
+	<windowsx.h>
+	<vector>
+
+1419105866 source:d:\mini-arche\main.cpp
+	<windows.h>
+	<windowsx.h>
+	<string.h>
+	"constantes.h"
+	"Utilisateur.h"
+
+1419105866 d:\mini-arche\constantes.h
+
+1419171004 d:\mini-arche\utilisateur.h
+	<windows.h>
+	<windowsx.h>
+	"BoiteDeReception.h"
+

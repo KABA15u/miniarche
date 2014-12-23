@@ -5,10 +5,9 @@
 #include <windowsx.h>
 #include <vector>
 
-class BoiteDeReception
+class BoiteDeReceptions
 {
-    public:
-
+public:
     BoiteDeReception();
     void newMessage(LPCSTR message);
     LPCSTR afficherMessage() const;
